@@ -1,0 +1,93 @@
+:root {
+    --fs1: 72px;
+    --fs2: 48px;
+    --fs3: 40px;
+    --fs4: 28px;
+    --fs5: 22px;
+    --fs6: 20px;
+    --fs7: 16px;
+    --fs8: 15px;
+    --fw1: 600;
+    --fw2: 500;
+    --fw3: 300;
+    --bg1: #F9F7FF;
+    --bg2: #fff;
+    --bg3: #85D1A0;
+    --bg4: #6255A5;
+    --bg5: #F5F5F5;
+    --cl1: #1F3E72;
+    --cl2: #1f3e72bf;
+    --cl3: #1f3d7256;
+    --cl4: #fff;
+    --p1: 3% 5%;
+    --p2: 10%;
+    --gp1: 50px;
+    --gp2: 30px;
+    --gp2: 20px;
+    --gp4: 15px;
+    --br1: 10px;
+    --br2: 50px;
+}
+
+.universal_btn {
+    height: 55px;
+    font-size: var(--fs6);
+    font-weight: var(--fw2);
+    color: var(--cl4);
+    border-radius: var(--br1);
+    background: var(--bg4);
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.info_btn {
+    padding: 5px;
+    font-size: var(--fs7);
+    border-radius: var(--br2);
+    color: var(--cl2);
+    border: 1px solid #ccc;
+    display: inline;
+    background: var(--bg2);
+    transition: all 0.2s ease-in-out;
+}
+
+.universal_btn:hover,
+.nav_btn_box>:nth-child(1):hover {
+    transform: scale(1.1);
+}
+
+@media(max-width: 1024px) {
+    .universal_btn {
+        height: 47px;
+    }
+}
+
+@media(max-width: 870px) {
+    .universal_btn {
+        height: 42px;
+        border-radius: 7px;
+        letter-spacing: 1px;
+    }
+
+    .info_btn {
+        font-size: var(--fs8);
+        font-weight: var(--fw2);
+    }
+}
+
+@media(max-width: 715px) {
+    .info_btn {
+        font-size: var(--fs5);
+        font-weight: var(--fw1);
+        letter-spacing: 1px;
+    }
+}
+
+@media(max-wudth: 630px) {
+    .universal_btn {
+        height: 35px;
+        border-radius: 5px;
+    }
+}
